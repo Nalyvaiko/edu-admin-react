@@ -4,7 +4,7 @@
   "description": "React and Redux",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
-    "start": "npm-run-all --parallel open:src lint:watch test:watch",
+    "start": "npm run open:src",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
@@ -30,9 +30,7 @@
     "react-router-redux": "4.0.4",
     "redux": "3.5.2",
     "redux-thunk": "2.0.1",
-    "toastr": "2.1.2"
-  },
-  "devDependencies": {
+    "toastr": "2.1.2",
     "babel-cli": "6.8.0",
     "babel-core": "6.8.0",
     "babel-eslint": "^7.1.1",
